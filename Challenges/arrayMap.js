@@ -20,4 +20,7 @@ const hasSubarrayWithTargetSum = (arr, target) => {
 
 const arr = [4, 2, 7, 1, 9, 5];
 const target = 17;
-console.log("The output is " + hasSubarrayWithTargetSum(arr, target));
+console.log(
+  "The output of Coding Challenge 1: Array Manipulation is " +
+    hasSubarrayWithTargetSum(arr, target)
+);
