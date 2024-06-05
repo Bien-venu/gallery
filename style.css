@@ -47,6 +47,7 @@ body {
   gap: 0px;
   opacity: 0px;
   aspect-ratio: 3 / 2;
+  background-color: var(--background-color);
 }
 
 .box img {
@@ -58,10 +59,11 @@ body {
 }
 
 .box:hover img {
-  -ms-transform: scale(1.15); /* IE 9 */
-  -webkit-transform: scale(1.15); /* Safari 3-8 */
+  -ms-transform: scale(1.15);
+  -webkit-transform: scale(1.15); 
   transform: scale(1.15);
-  opacity: 0.6;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
 }
 
 .details {
@@ -84,11 +86,8 @@ body {
 }
 
 .detail{
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, .8) 100%,
-    rgb(0, 0, 0, .8) 100%
-  );
+  background: var(--background-color);
+  opacity: 0.7;
 }
 
 .info {
@@ -138,7 +137,7 @@ body {
   color: var(--primary-color);
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 916px) {
   .info {
     display: none;
   }
